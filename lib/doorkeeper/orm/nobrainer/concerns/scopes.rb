@@ -9,13 +9,13 @@ module Doorkeeper
         end
 
         def scopes=(value)
-          write_attribute :scopes, value if value.present?
+          write_attribute :scope, value if value.present?
         end
 
         def scopes
           scope
         end
-        
+
       end
     end
   end
