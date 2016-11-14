@@ -2,9 +2,9 @@ module Doorkeeper
   class Application
     include NoBrainer::Document
     include NoBrainer::Document::Timestamps
-    include Models::Nobrainer::Scopes
 
     include ApplicationMixin
+    include Models::Nobrainer::Scopes
 
     table_config name: :oauth_applications
 

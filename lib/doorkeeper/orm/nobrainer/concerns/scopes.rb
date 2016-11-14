@@ -5,12 +5,17 @@ module Doorkeeper
         extend ActiveSupport::Concern
 
         included do
-          field :scopes, type: String
+          field :scope, type: String
         end
 
         def scopes=(value)
           write_attribute :scopes, value if value.present?
         end
+
+        def scopes
+          scope
+        end
+        
       end
     end
   end
