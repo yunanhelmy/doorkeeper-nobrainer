@@ -6,7 +6,7 @@ module Doorkeeper
 
     include ApplicationMixin
 
-    store_in table: :oauth_applications
+    table_config name: :oauth_applications
 
     field :name, type: String
     field :uid, type: String, index: true, unique: true
