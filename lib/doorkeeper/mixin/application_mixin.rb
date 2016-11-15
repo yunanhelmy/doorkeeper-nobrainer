@@ -31,7 +31,7 @@ module DoorkeeperNobrainer
 
     def has_scopes?
       Doorkeeper.configuration.orm != :active_record ||
-        Doorkeeper::Application.column_names.include?("scopes")
+        Doorkeeper::Application.fields.keys.include?("scopes")
     end
 
     def generate_uid
