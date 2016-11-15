@@ -8,7 +8,7 @@ module Doorkeeper
     include Doorkeeper::Models::Nobrainer::Scopes
     table_config name: :oauth_access_grants
 
-    field :resource_owner_id, primary_key: true
+    field :resource_owner_id #, primary_key: true
     field :token, type: String, index: true, unique: true
     field :expires_in, type: Integer
     field :redirect_uri, type: String

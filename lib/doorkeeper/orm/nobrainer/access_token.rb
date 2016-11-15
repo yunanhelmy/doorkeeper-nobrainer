@@ -9,7 +9,7 @@ module Doorkeeper
 
     table_config name: :oauth_access_tokens
 
-    field :resource_owner_id, primary_key: true
+    field :resource_owner_id #, primary_key: true
     field :token, type: String, index: true, unique: true
     field :refresh_token, type: String, index: true
     field :expires_in, type: Integer
