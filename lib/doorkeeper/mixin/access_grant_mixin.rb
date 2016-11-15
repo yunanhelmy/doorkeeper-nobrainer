@@ -4,7 +4,7 @@ module DoorkeeperNobrainer
 
     include Doorkeeper::OAuth::Helpers
     include Doorkeeper::Models::Expirable
-    include Doorkeeper::Models::Revocable
+    include Doorkeeper::Models::Nobrainer::Revocable
     include Doorkeeper::Models::Accessible
     include Doorkeeper::Models::Scopes
     include ActiveModel::MassAssignmentSecurity if defined?(::ProtectedAttributes)

@@ -6,6 +6,7 @@ module Doorkeeper
 
     include DoorkeeperNobrainer::AccessGrantMixin
     include Doorkeeper::Models::Nobrainer::Scopes
+    
     table_config name: :oauth_access_grants
 
     field :resource_owner_id #, primary_key: true
