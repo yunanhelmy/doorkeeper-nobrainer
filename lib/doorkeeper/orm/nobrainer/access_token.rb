@@ -27,7 +27,7 @@ module Doorkeeper
     end
 
     def self.created_at_desc
-      [:created_at, :desc]
+      {:created_at => :desc}
     end
   end
 end
