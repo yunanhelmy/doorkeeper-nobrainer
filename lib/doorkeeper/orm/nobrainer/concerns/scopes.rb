@@ -13,7 +13,7 @@ module Doorkeeper
         end
 
         def scopes
-          scope.nil? nil : Doorkeeper::OAuth::Scopes.from_string(scope)
+          scope
         end
 
       end
