@@ -120,6 +120,10 @@ module DoorkeeperNobrainer
       accessible? && includes_scope?(*scopes)
     end
 
+    def application_id?
+      application_id
+    end
+
     private
 
     def generate_refresh_token
